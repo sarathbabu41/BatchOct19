@@ -23,7 +23,7 @@ public class homepage extends basepage {
 	@FindBy(xpath="//p[@class='alert alert-success']")
 	private WebElement alertsuccess;
 	@FindBy(xpath="alert alert-danger")
-	private WebElement alertdanger1;
+	private WebElement alertdanger2;
 	
 	
 	
@@ -52,7 +52,7 @@ public class homepage extends basepage {
 		return alertsuccess;
 	}
 	public WebElement subfailmsg() {
-		return alertdanger1;
+		return alertdanger2;
 	}
 	public void submitemail(String email) {
 		newsletter.sendKeys(email+Keys.ENTER);
